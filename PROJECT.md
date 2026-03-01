@@ -1,13 +1,15 @@
 # Auth Service
 
+## Live
+https://auth-service-production-ad40.up.railway.app/api/docs
+
 ## Stack
 - **Runtime:** Node.js 24 (nvm)
 - **Framework:** NestJS
 - **Database:** PostgreSQL 18 (Docker - local), Railway PostgreSQL (production)
 - **ORM:** TypeORM
 - **Auth:** JWT (access token 15m, refresh token 7d)
-- **Deploy:** Railway (sonraki adım)
-- **OS:** Fedora KDE
+- **Deploy:** Railway
 
 ## Purpose
 Authentication microservice for an e-commerce platform. Handles user registration, login, and token management. Will be extended with order-service, storefront, and admin dashboard.
@@ -31,11 +33,8 @@ Authentication microservice for an e-commerce platform. Handles user registratio
 - [x] JwtAuthGuard
 - [x] Protected endpoint example (GET /users/me)
 - [x] Swagger documentation (/api/docs)
-
-## Next Steps
-- [ ] Railway deploy
-- [ ] synchronize: false + migrations (production)
-- [ ] GitHub repo oluştur
+- [x] Dockerfile
+- [x] Railway deploy
 
 ## Endpoints
 | Method | Path | Auth | Description |
